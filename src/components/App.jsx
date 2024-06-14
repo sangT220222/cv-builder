@@ -40,7 +40,7 @@ function App() {
       <h1>CV Builder</h1>
       <GeneralInfo generalInfo = {generalInfo} onGeneralInfoChange = {handleGeneralInfo}/>
       <Education education = {education} onEducationChange = {handleEducationChange}/>
-      <Experience experience={experience} onExperienceChange={handleEducationChange} />
+      <Experience experience={experience} onExperienceChange={handlexperienceChange} />
     </div>
   )
 }
