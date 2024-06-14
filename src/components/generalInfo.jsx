@@ -35,11 +35,11 @@ function GeneralInfo({generalInfo, onGeneralInfoChange}){
           </label>
           <label>
             Email:
-            <input type = "text" name = "email" value = {info.name} onChange = {handleChange}></input>
+            <input type = "text" name = "email" value = {info.email} onChange = {handleChange}></input>
           </label>
           <label>
             Phone:
-            <input type = "text" name = "phone" value = {info.name} onChange = {handleChange}></input>
+            <input type = "text" name = "phone" value = {info.phone} onChange = {handleChange}></input>
           </label>
           <button onClick={handleSubmit}>
             Submit
