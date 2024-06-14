@@ -16,8 +16,9 @@ function GeneralInfo({generalInfo, onGeneralInfoChange}){
   }
 
   const handleSubmit = () =>{
-    onGeneralInfoChange(info);
-    setIsEditing(false);
+    onGeneralInfoChange(info); //this updates the generalInfo state in parent component in App.jsx
+    //info contains latest values of name, email and phone
+    setIsEditing(false); //switches editing to display mode
   }
 
   const handleEdit = () =>{
@@ -33,6 +34,7 @@ function GeneralInfo({generalInfo, onGeneralInfoChange}){
             Name:
             <input type = "text" name = "name" value = {info.name} onChange = {handleChange}></input>
           </label>
+          {/* user types into input field, which triggers handleChange to update info's state */}
           <label>
             Email:
             <input type = "text" name = "email" value = {info.email} onChange = {handleChange}></input>
@@ -50,6 +52,7 @@ function GeneralInfo({generalInfo, onGeneralInfoChange}){
           <p>Name : {info.name};</p>
           <p>Email : {info.email}</p>
           <p>Phone number : {info.phone}</p>
+          <button onClick={handleEdit}>Edit</button>
         </div>
       }
     </div>
