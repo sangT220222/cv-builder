@@ -1,15 +1,16 @@
 import React, { useState } from "react";
 
-function Education({ education, onExperienceChange }) {
+function Education({ education, onEducationChange }) {
   const [isEditing, setIsEditing] = useState(true);
   const [info, setInfo] = useState(education);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setInfo((prevInfo) => ({ ...prevInfo, [name]: value }));
   };
 
   const handleSubmit = () => {
-    onExperienceChange(info);
+    onEducationChange(info);
     setIsEditing(false);
   };
 
@@ -18,8 +19,8 @@ function Education({ education, onExperienceChange }) {
   };
 
   return (
-    <div className="experience">
-      <h2>Experience</h2>
+    <div className="education">
+      <h2>Education</h2>
       {isEditing ? (
         <div>
           <label>
