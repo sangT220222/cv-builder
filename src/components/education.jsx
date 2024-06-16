@@ -24,7 +24,7 @@ function Education({ education, onEducationChange }) {
       {isEditing ? (
         <div>
           <label>
-            Title
+            Title:
             <input
               type="text"
               name="title"
@@ -33,7 +33,7 @@ function Education({ education, onEducationChange }) {
             ></input>
           </label>
           <label>
-            School Name
+            School Name:
             <input
               type="text"
               name="schoolName"
@@ -42,7 +42,7 @@ function Education({ education, onEducationChange }) {
             ></input>
           </label>
           <label>
-            Start Date
+            Start Date:
             <input
               type="date"
               name="startDate"
@@ -51,7 +51,7 @@ function Education({ education, onEducationChange }) {
             ></input>
           </label>
           <label>
-            End Dates
+            End Date:
             <input
               type="date"
               name="endDate"
@@ -65,8 +65,8 @@ function Education({ education, onEducationChange }) {
         <div>
           <p>Title: {info.title}</p>
           <p>School Name: {info.schoolName}</p>
-          <p>Start dates: {info.startDate}</p>
-          <p>End dates: {info.endDate}</p>
+          <p>Start date: {info.startDate}</p>
+          <p>End date: {info.endDate}</p>
           <button onClick={handleEdit}> Edit </button>
         </div>
       )}
