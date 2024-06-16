@@ -24,7 +24,7 @@ function Experience({ experience, onExperienceChange }) {
       {isEditing ? (
         <div>
           <label>
-            Job Title
+            Job Title:
             <input
               type="text"
               name="jobTitle"
@@ -33,7 +33,7 @@ function Experience({ experience, onExperienceChange }) {
             ></input>
           </label>
           <label>
-            Start Date
+            Start Date:
             <input
               type="date"
               name="startDate"
@@ -42,7 +42,7 @@ function Experience({ experience, onExperienceChange }) {
             ></input>
           </label>
           <label>
-            End Dates
+            End Date:
             <input
               type="date"
               name="endDate"
@@ -51,7 +51,7 @@ function Experience({ experience, onExperienceChange }) {
             ></input>
           </label>
           <label>
-            Responsibilities
+            Responsibilities:
             <input
               type="text"
               name="responsibilities"
@@ -64,8 +64,8 @@ function Experience({ experience, onExperienceChange }) {
       ) : (
         <div>
           <p>Job Title: {info.jobTitle}</p>
-          <p>Start dates: {info.startDate}</p>
-          <p>End dates: {info.endDate}</p>
+          <p>Start date: {info.startDate}</p>
+          <p>End date: {info.endDate}</p>
           <p>Responsibilites: {info.responsibilities}</p>
           <button onClick={handleEdit}> Edit </button>
         </div>
