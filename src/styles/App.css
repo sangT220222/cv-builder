@@ -1,39 +1,95 @@
+/* App.css */
+
+/* General styling for the app */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f0f2f5;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  box-sizing: border-box;
-}
-.app {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 800px;
-  margin: 20px;
-  box-sizing: border-box;
+  color: #333;
 }
 
+.app {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Heading styles */
 h1 {
   text-align: center;
-  color: #333;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
+  font-size: 2em;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #4a90e2;
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Form container */
+.general-info,
+.education,
+.experience {
+  margin-bottom: 30px;
 }
 
 label {
-  font-weight: 600;
-  color: #555;
-  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 button:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+  background-color: #357ab8;
+}
+
+/* Display container */
+.general-info div p,
+.education div p,
+.experience div p {
+  margin: 10px 0;
+  padding: 10px;
+  background: #f4f4f4;
+  border-left: 4px solid #4a90e2;
+  border-radius: 5px;
+}
+
+/* Edit button */
+button.edit {
+  background-color: #f39c12;
+}
+
+button.edit:hover {
+  background-color: #e67e22;
 }
