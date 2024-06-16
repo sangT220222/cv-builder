@@ -41,11 +41,20 @@ function Education({ education, onExperienceChange }) {
             ></input>
           </label>
           <label>
-            Study Dates
+            Start Date
             <input
               type="date"
-              name="studyDate"
-              value={info.studyDate}
+              name="startDate"
+              value={info.startDate}
+              onChange={handleChange}
+            ></input>
+          </label>
+          <label>
+            End Dates
+            <input
+              type="date"
+              name="endDate"
+              value={info.endDate}
               onChange={handleChange}
             ></input>
           </label>
@@ -55,7 +64,8 @@ function Education({ education, onExperienceChange }) {
         <div>
           <p>Title: {info.title}</p>
           <p>School Name: {info.schoolName}</p>
-          <p>Study dates: {info.studyDate}</p>
+          <p>Start dates: {info.startDate}</p>
+          <p>End dates: {info.endDate}</p>
           <button onClick={handleEdit}> Edit </button>
         </div>
       )}
