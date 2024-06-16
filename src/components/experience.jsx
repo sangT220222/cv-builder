@@ -33,11 +33,20 @@ function Experience({ experience, onExperienceChange }) {
             ></input>
           </label>
           <label>
-            Date of Work
+            Start Date
             <input
               type="date"
-              name="dateOfWork"
-              value={info.dateOfWork}
+              name="startDate"
+              value={info.startDate}
+              onChange={handleChange}
+            ></input>
+          </label>
+          <label>
+            End Dates
+            <input
+              type="date"
+              name="endDate"
+              value={info.endDate}
               onChange={handleChange}
             ></input>
           </label>
@@ -55,7 +64,8 @@ function Experience({ experience, onExperienceChange }) {
       ) : (
         <div>
           <p>Job Title: {info.jobTitle}</p>
-          <p>Date of Work: {info.dateOfWork}</p>
+          <p>Start dates: {info.startDate}</p>
+          <p>End dates: {info.endDate}</p>
           <p>Responsibilites: {info.responsibilities}</p>
           <button onClick={handleEdit}> Edit </button>
         </div>
